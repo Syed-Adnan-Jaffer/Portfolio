@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #0d0c22;
+    color: white;
+    display: flex;
+    font-family:'Montserrat', 'Poppins', 'SUSE Mono';
+}
+
+
+
+/* @keyframes NavBar-anim{
+    from {
+    translate: -150vw 0;
+    scale: 200% 1;
+  }
+
+  to{
+    translate: 0 0;
+    scale: 100% 1;
+  }
+} */
+
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-bottom: 2px solid black;
+    height: 3rem;
+    width: 80%;
+    align-items: center;
+    box-shadow: 0.5px 0.5px 5px white;
+    border-radius: 10px;
+    margin: 1.6rem  10rem 0 10rem;
+    background-color: #0c0f2a;
+    animation: NavBar-anim 2s 1 ease-in-out ;
+    color: white;
+}
+
+@keyframes NavBar-anim{
+    from {
+    translate: -150vw 0;
+    scale: 200% 1;
+  }
+
+  to{
+    translate: 0 0;
+    scale: 100% 1;
+  }
+} 
+
+a:hover{
+    border: 2px solid transparent;
+    color: wheat;
+}
+
+.navbar-brand{
+    color: white;
+}
+.navbar-brand:hover{
+    color: wheat;
+}
+
+.nav-link{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-link:hover{
+    color: wheat;
+    border:none;
+}
+
+.navbar{
+    justify-content: space-between;
+}
+
+.container-fluid i{
+    justify-content: center;
+}
