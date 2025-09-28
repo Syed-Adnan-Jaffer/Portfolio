@@ -9,33 +9,17 @@ body{
     display: flex;
     font-family:'Montserrat', 'Poppins', 'SUSE Mono';
 }
-
-
-
-/* @keyframes NavBar-anim{
-    from {
-    translate: -150vw 0;
-    scale: 200% 1;
-  }
-
-  to{
-    translate: 0 0;
-    scale: 100% 1;
-  }
-} */
-
-
 .navbar{
     display: flex;
     justify-content: center;
     justify-content: space-between;
-    font-size: 1.1rem;
+    font-size: 1.1em;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     border-bottom: 2px solid black;
     height: 3rem;
-    width: 80%;
+    width: 80rem;
     align-items: center;
     box-shadow: 0.5px 0.5px 5px white;
     border-radius: 10px;
@@ -86,4 +70,46 @@ a:hover{
 
 .container-fluid i{
     justify-content: center;
+}
+
+@media(max-width:625px){
+    .navbar{
+        background-color: red;
+        width: 20em;
+        margin-left: 2em;
+        margin-right:2em ;
+    }
+    .container-fluid a{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:425px){
+    .navbar{
+        background-color: green;
+    }
+     .container-fluid a{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width:375px){
+    .navbar{
+        background-color: pink;
+    }
+    .container-fluid a{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 340px) {
+    .navbar{
+        background-color: rgb(230, 95, 95);
+        }
+    .container-fluid a{
+        font-size: 0.75em;
+    }
+    .container-fluid button{
+        font-size: 1rem;
+    }
 }
